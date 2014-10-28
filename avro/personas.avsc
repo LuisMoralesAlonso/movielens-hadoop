@@ -1,0 +1,27 @@
+{
+    "namespace":"inf.per.gen.personas",
+    "type": "record",
+    "name": "basicos",
+    "fields": [
+        {
+            "name": "id",
+            "type": ["int","null"]
+        },
+        {
+            "name": "age",
+            "type": ["int","null"]
+        },
+        {
+            "name": "gender",
+            "type": ["string","null"]
+        },
+        {
+            "name": "occupation",
+            "type": ["string","null"]
+        },
+        {
+            "name": "zipcode",
+            "type": ["int","null"]
+        }
+    ]
+}

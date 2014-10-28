@@ -1,0 +1,104 @@
+{
+    "namespace":"del.crm.cli.movielens",
+    "type": "record",
+    "name": "items",
+    "fields": [
+        {
+            "name": "id",
+            "type": "int"
+        }, 
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "isoreleasedate",
+            "type": ["string","null"]
+        },
+        {
+            "name": "isovideoreleasedate",
+            "type": ["string","null"]
+        },
+        {
+            "name": "imdburl",
+            "type": ["string","null"]
+        },
+        {
+            "name": "unknown",
+            "type": ["int","null"]
+        },
+        {
+            "name": "action",
+            "type": ["int","null"]
+        },
+        {
+            "name": "adventure",
+            "type": ["int","null"]
+        },
+        {
+            "name": "animation",
+            "type": ["int","null"]
+        },
+        {
+            "name": "children",
+            "type": ["int","null"]
+        },
+        {
+            "name": "comedy",
+            "type": ["int","null"]
+        },
+        {
+            "name": "crime",
+            "type": ["int","null"]
+        },
+        {
+            "name": "documentary",
+            "type": ["int","null"]
+        },
+        {
+            "name": "drama",
+            "type": ["int","null"]
+        },
+        {
+            "name": "fantasy",
+            "type": ["int","null"]
+        },
+        {
+            "name": "noir",
+            "type": ["int","null"]
+        },
+        {
+            "name": "horror",
+            "type": ["int","null"]
+        },
+        {
+            "name": "musical",
+            "type": ["int","null"]
+        },{
+            "name": "mistery",
+            "type": ["int","null"]
+        },
+        {
+            "name": "romance",
+            "type": ["int","null"]
+        },
+        {
+            "name": "scifi",
+            "type": ["int","null"]
+        },
+        {
+            "name": "thriller",
+            "type": ["int","null"]
+        },
+        {
+            "name": "war",
+            "type": ["int","null"]
+        },
+        {
+            "name": "western",
+            "type": ["int","null"]
+        }
+    ]
+}
+
+noir:int,horror:int,musical:int,mistery:int,romance:int,scifi:int,thriller:int,war:int,western:int

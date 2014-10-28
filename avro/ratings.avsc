@@ -1,0 +1,23 @@
+{
+    "namespace":"del.crm.cli.movielens",
+    "type": "record",
+    "name": "ratings",
+    "fields": [
+        {
+            "name": "userid",
+            "type": ["int","null"]
+        },
+        {
+            "name": "itemid",
+            "type": ["int","null"]
+        },
+        {
+            "name": "rating",
+            "type": ["int","null"]
+        },
+        {
+            "name": "timestamp",
+            "type": ["long","null"]
+        }
+    ]
+}

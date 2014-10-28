@@ -1,0 +1,11 @@
+{
+    "namespace":"inf.per.gen.personas",
+    "type": "record",
+    "name": "occupations",
+    "fields": [
+        {
+            "name": "occupation",
+            "type": ["string","null"]
+        }
+    ]
+}

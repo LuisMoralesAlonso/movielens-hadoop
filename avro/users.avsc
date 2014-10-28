@@ -1,0 +1,15 @@
+{
+    "namespace":"del.crm.cli.movielens",
+    "type": "record",
+    "name": "genre",
+    "fields": [
+        {
+            "name": "genrename",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        }
+    ]
+}

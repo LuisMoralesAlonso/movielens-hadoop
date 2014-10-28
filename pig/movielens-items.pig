@@ -38,4 +38,8 @@ semiitems = FOREACH rawitems GENERATE id,title,ToString(ToDate((
 	END
 ),'dd-MMM-yyyy')) AS isovideoreleasedate,imdburl ..;	
 
+SET mapred.output.compress true;
+SET mapred.output.compression.codec org.apache.hadoop.io.compress.SnappyCodec;
+SET avro.output.codec snappy;
+
 store semiitems into '/pr/gray/del/crm/cli/movielens/items' USING AvroStorage('','-f hdfs:///pr/app/del/crm/cli/movielens/avro/items.avsc');																																															

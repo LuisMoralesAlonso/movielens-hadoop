@@ -1,11 +1,16 @@
+CREATE SCHEMA IF NOT EXISTS movielens LOCATION '/pr/gray/del/crm/cli/movielens';
+
 CREATE EXTERNAL TABLE IF NOT EXISTS movielens.genre (
 	genre	string,
 	id	int
 ) 
-COMMENT ‘Tabla de géneros cinematográficos’
-STORED AS AVRO
-LOCATION '/pr/black/del/crm/cli/movielens/genre'
+COMMENT 'Tabla de géneros cinematográficos'
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+LOCATION '/pr/gray/del/crm/cli/movielens/genre'
 TBLPROPERTIES ('avro.schema.url'='hdfs://pr/app/del/crm/cli/movielens/genre.avsc');
+
 
 
 CREATE EXTERNAL TABLE IF NOT EXISTS movielens.items (

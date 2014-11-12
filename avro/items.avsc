@@ -100,5 +100,3 @@
         }
     ]
 }
-
-noir:int,horror:int,musical:int,mistery:int,romance:int,scifi:int,thriller:int,war:int,western:int

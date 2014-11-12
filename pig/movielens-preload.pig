@@ -16,7 +16,6 @@ fs -mkdir /pr/black/inf/per/gen;
 fs -mkdir /pr/black/inf/per/gen/personas;
 fs -mkdir /pr/black/inf/per/gen/grupos;
 
-fs -mkdir /pr;
 fs -mkdir /pr/gray;
 fs -mkdir /pr/gray/del;
 fs -mkdir /pr/gray/del/crm;
